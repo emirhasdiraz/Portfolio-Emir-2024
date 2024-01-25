@@ -1,0 +1,308 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+    color: blue;
+    font-family: 'Courier New', Courier, monospace;
+    min-width: 100%;
+    min-height: 100%;
+    scroll-behavior: smooth;
+}
+
+.gradient1{
+    
+    background: rgb(0,27,255);
+    background: linear-gradient(0deg, rgba(0,0,00,1) 0%, rgba(0,2,56,1) 50%, rgba(0,0,0,1) 100%);
+}
+
+body.scrollable {
+    overflow: auto;
+}
+
+#loadingMessage {
+    text-align: center;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+h1 {
+    display: block;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 160px;
+}
+
+h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 200px;
+}
+
+p {
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: white;
+}
+
+.blue {
+    color: blue;
+}
+
+button,
+.button {
+    padding: 10px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    background: blue;
+    color: rgb(255, 255, 255);
+    border: 1px solid blue;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 170px;
+    text-decoration: none;
+}
+
+button:hover {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+#content,
+.mainpage {
+    display: none;
+}
+
+#matrixCanvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#matrixText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Courier New', monospace;
+    font-size: 24px;
+    white-space: nowrap;
+    color: blue;
+}
+
+.header {
+    background-color: blue;
+    padding: 20px;
+    text-align: center;
+    color: black;
+}
+
+.nav-options {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-options a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 19.2px;
+    font-weight: 900;
+}
+
+.nav-options a:hover {
+    color: rgb(0, 0, 0);
+}
+
+.padding-5{
+    margin-left: 10px;
+}
+
+.emirtitle,
+.softwaretitle {
+    display: flex;
+    justify-content: center;
+}
+
+.dragon {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 770px;
+    height: 470px;
+}
+
+#aboutme {
+    display: flex;
+    gap: 2rem;
+    padding-top: 3rem;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.aboutbox1 h1 {
+    letter-spacing: 2px;
+    font-size: 32px;
+}
+
+.footerbox1 {
+    margin-left: 140px;
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    margin-bottom: 300px;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon1,
+.social-icon2 {
+    margin-right: 10px;  
+}
+
+.svglinkedin,
+.svggithub {
+    text-decoration: none;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#stack{
+margin-bottom: 500px;
+margin-left: 100px;
+}
+
+.stackboxes{
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+}
+
+.stackbox1,
+.stackbox2,
+.stackbox3 {
+width: 200px;
+height: 200px;
+}
+
+.stackboxpng{
+    width: 200px;
+    height: 200px;
+}
+
+#projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    margin: 0;
+}
+
+.projecters {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.project1,
+.project2,
+.project3 {
+    width: calc(30% - 20px); 
+    margin: 10px; 
+    padding: 20px;
+    border: 1px solid #ddd; 
+    box-sizing: border-box;
+}
+.project h4 {
+    font-size: 19.2px;
+    margin-bottom: 10px;
+}
+
+.project-image {
+    position: relative;
+    display: inline-block;
+    margin: 10px;   
+    border: 1px solid #ddd; 
+}
+
+.overlay-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 90%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.project-image:hover .overlay-text {
+    opacity: 1;
+}
+
+.matrixvideo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 300px;
+}
+
+#footer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 1rem;
+    margin: 0px auto;
+    background: rgb(0,27,255);
+    background: linear-gradient(0deg, rgb(8, 0, 255) 10%, rgba(0,0,0,1) 100%);
+}
+
+#contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.contactbox {
+    flex-basis: 60%;
+}
+
+.profilesbox {
+    flex-basis: 30%;
+}
