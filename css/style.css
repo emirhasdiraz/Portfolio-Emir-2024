@@ -29,6 +29,11 @@ body.scrollable {
     height: 100vh;
 }
 
+#matrix{
+    width: 800;
+    height: 600;
+}
+
 h1 {
     display: block;
     font-size: 32px;
@@ -174,12 +179,13 @@ button:hover {
 
 .social-icon1,
 .social-icon2 {
-    margin-right: 10px;  
+    margin-right: 10px;
 }
 
 .svglinkedin,
 .svggithub {
     text-decoration: none;
+    fill: #ddd;
 }
 
 .social-icons a {
@@ -227,7 +233,6 @@ height: 200px;
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-    
 }
 
 .project1,
@@ -251,6 +256,16 @@ height: 200px;
     border: 1px solid #ddd; 
 }
 
+.projectimages1{
+    width: 500px;
+    height: 200px;
+}
+
+.projectimages2{
+    width: 600px;
+    height: 300px;
+}
+
 .overlay-text {
     position: absolute;
     top: 0;
@@ -263,11 +278,16 @@ height: 200px;
     font-size: 18px;
     padding: 20px;
     opacity: 0;
-    transition: opacity 0.3s;
+    transition: opacity 0.5s;
 }
 
 .project-image:hover .overlay-text {
     opacity: 1;
+}
+
+.matrixtext{
+    display: flex;
+    flex-direction: column;
 }
 
 .matrixvideo {
@@ -275,6 +295,10 @@ height: 200px;
     align-items: center;
     justify-content: center;
     margin-bottom: 300px;
+}
+
+video {
+    width: 700px; 
 }
 
 #footer {
